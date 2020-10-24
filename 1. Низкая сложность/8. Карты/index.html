@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карты</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 1em auto 1.1em;
+        }
+
+        li::before {
+            padding-right: .7em;
+        }
+
+        .a::before {
+            content: "\2660";
+        }
+
+        .b::before {
+            content: "\2663";
+        }
+
+        .c::before {
+            content: "\2666";
+        }
+
+        .d::before {
+            content: "\2665";
+        }
+
+        .c::before,
+        .d::before {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="a">8, 9</li>
+        <li class="b">8, 9</li>
+        <li class="c">7, 10, B</li>
+        <li class="d">7, 8, 9</li>
+    </ul>
+</body>
+
+</html>
