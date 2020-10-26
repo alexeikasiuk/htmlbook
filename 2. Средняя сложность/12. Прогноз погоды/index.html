@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <style>
+        .wrap {
+            text-align: center;
+        }
+
+        .day {
+            display: inline-block;
+            font-size: 28px;
+            height: 165px;
+            letter-spacing: -.04em;
+            width: 135px;
+        }
+
+        .day:nth-child(n+2) {
+            margin-left: -3px;
+        }
+
+        .date {
+            background-color: #0097B8;
+            color: #FFF;
+        }
+
+        .temp {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="day">
+            <div class="date">31.08</div>
+            <div class="img">
+                <img src="../../images/weather-sun.jpg">
+            </div>
+            <div class="temp">
+                <span>+20&deg;</span>
+            </div>
+        </div>
+        <div class="day">
+            <div class="date">01.09</div>
+            <div class="img">
+                <img src="../../images/weather-snow.jpg">
+            </div>
+            <div class="temp">
+                <span>-3&deg;</span>
+            </div>
+        </div>
+        <div class="day">
+            <div class="date">02.09</div>
+            <div class="img">
+                <img src="../../images/weather-blizzard.jpg">
+            </div>
+            <div class="temp">
+                <span>-10&deg;</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

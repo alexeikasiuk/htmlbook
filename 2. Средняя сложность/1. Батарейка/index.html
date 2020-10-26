@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Батарейка</title>
+    <style>
+        .bat {
+            border: 4px solid black;
+            height: 50px;
+            margin: 10px auto;
+            position: relative;
+            width: 150px;
+        }
+
+        .bat::before,
+        .bat::after {
+            content: "";
+            position: absolute;
+        }
+
+        .bat::after {
+            background-color: black;
+            height: 20px;
+            right: -10px;
+            top: 15px;
+            width: 6px;
+        }
+
+        .bat::before {
+            height: 100%;
+        }
+
+        .low::before {
+            background-color: #ED1C24;
+            width: 33%;
+        }
+
+        .med::before {
+            background-color: #FFC60B;
+            width: 66%;
+        }
+
+        .hight::before {
+            background-color: #00A055;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bat low"></div>
+    <div class="bat med"></div>
+    <div class="bat hight"></div>
+</body>
+
+</html>

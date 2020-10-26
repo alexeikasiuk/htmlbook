@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нумерация страниц</title>
+    <style>
+        .wrap {
+            background-color: #F0F0F0;
+            border-bottom: 3px solid #CCCCCC;
+            height: 40px;
+            padding-left: 30px
+        }
+
+        .wrap span {
+            color: #720000;
+            display: inline-block;
+            line-height: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .wrap span:not([class="checked"]) {
+            cursor: pointer;
+        }
+        .checked {
+            color: #000;
+            background-color: #CCC;
+            border-bottom: 3px solid #373737;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <span class="checked">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&rsaquo;</span>
+    </div>
+    <p>Содержание</p>
+</body>
+
+</html>

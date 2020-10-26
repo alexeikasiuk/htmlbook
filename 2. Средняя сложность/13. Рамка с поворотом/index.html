@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рамка с поворотом</title>
+    <style>
+        .r {
+            line-height: 200px;
+            margin: 100px auto;
+            outline: 1px solid #fff;
+            position: relative;
+            text-align: center;
+        }
+
+        .r::after {
+            content: "";
+            left: -4px;
+            position: absolute;
+            top: -4px;
+            transform: rotate(-6deg);
+            z-index: -10;
+        }
+
+
+        .r,
+        .r::after {
+            border: 3px solid #c3b69e;
+            box-shadow: inset 0 0 0 4px #D3D4D3;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="r"><img src="../../images/android.png"></div>
+</body>
+
+</html>

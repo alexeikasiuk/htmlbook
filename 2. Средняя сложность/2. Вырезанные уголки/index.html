@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вырезанные уголки</title>
+    <style>
+        p {
+            box-sizing: border-box;
+            color: white;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 auto;
+            padding-left: 15px;
+            position: relative;
+            width: 200px;
+        }
+
+        p,
+        p::before,
+        p::after {
+            background-color: green;
+        }
+
+        p::before,
+        p::after {
+            content: "";
+            height: 40px;
+            position: absolute;
+            top: 5px;
+            width: 5px;
+        }
+
+        p::before {
+            left: -5px;
+        }
+
+        p::after {
+            right: -5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Содержимое</p>
+</body>
+
+</html>

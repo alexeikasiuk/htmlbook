@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        fieldset {
+            background-color: #E1E3B8;
+            background-image: url(../../images/check-bg.png);
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            border: 1px solid #5B7954;
+        }
+
+        legend {
+            color: #A35D43;
+            font: bold 18px Arial;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 0px;
+            line-height: 20px;
+        }
+
+        form {
+            margin-left: 140px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 17px;
+        }
+
+        label>input {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #B98F5C;
+            border: 1px solid white;
+            color: white;
+            height: 20px;
+            letter-spacing: -1px;
+            margin-left: 5px;
+            margin-top: 3px;
+            width: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Выбор варианта</legend>
+        <p>Какой раздел психологии изучает познавательные процессы человеческого сознания?</p>
+        <form>
+            <label><input type="radio" value="1" name="a">Психоанализ</label>
+            <label><input type="radio" value="2" name="a">Бихевиоризм</label>
+            <label><input type="radio" value="3" name="a">Когнитивная психология</label>
+            <label><input type="radio" value="4" name="a">Гуманистическая психология</label>
+            <label><input type="radio" value="5" name="a">Гештальт-психология</label>
+            <button>Ответить</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
